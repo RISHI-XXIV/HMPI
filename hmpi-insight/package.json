@@ -1,0 +1,32 @@
+{
+  "name": "hmpi-insight",
+  "version": "1.0.0",
+  "description": "AI-Powered Groundwater Heavy Metal Pollution Monitoring & Prediction Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "groundwater",
+    "pollution",
+    "monitoring",
+    "AI",
+    "prediction",
+    "HMPI",
+    "environmental",
+    "health"
+  ],
+  "author": "HMPI-Insight Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.11.0"
+  }
+}
